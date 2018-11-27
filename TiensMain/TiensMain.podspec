@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "A short description of TiensMain."
 
   s.homepage     = "https://github.com/songmh2010/TiensKit.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -78,8 +77,7 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
-  s.source       = https://github.com/songmh2010/TiensKit.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/songmh2010/TiensKit.git', :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,12 +90,12 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
-  s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore'
+  s.frameworks = "UIKit", "CoreFoundation", "QuartzCore"
   s.dependency 'Masonry'
   s.dependency 'AFNetworking'
   s.dependency 'YYWebImage'
   s.dependency 'BeeHive'
-  s.static_framework  =  true
+  #s.static_framework  =  true
 
   # s.public_header_files = "Classes/**/*.h"
 
