@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "TiensMain/Classes", "TiensMain/Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   s.frameworks = "UIKit", "CoreFoundation", "QuartzCore"
   s.dependency 'Masonry'
