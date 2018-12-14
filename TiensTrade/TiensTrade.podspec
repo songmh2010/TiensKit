@@ -88,13 +88,13 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TiensUser/Classes", "TiensUser/Classes/**/*.{h,m}"
+  s.source_files  = "TiensTrade/Classes", "TiensTrade/Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   s.frameworks = "UIKit", "CoreFoundation", "QuartzCore"
   s.dependency 'AFNetworking'
   s.dependency 'SDWebImage', '~> 3.8.2'
   s.dependency 'BeeHive'
-  #s.static_framework  =  true
+  s.static_framework  =  true
 
   # s.public_header_files = "Classes/**/*.h"
 
