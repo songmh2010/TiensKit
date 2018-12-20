@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  Pods
+
+  Created by s on 2018/12/20.
+  
+*/
+CFBundleDisplayName = "我的app";
